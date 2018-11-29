@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <body>
+            <script>
+
+//   task 2   
+  function a (str){
+    var max =1; 
+     arr=str.split(" ");
+    for (var key in arr ){
+       if (max >= arr[key].length){
+           continue;
+       }else {
+           max = arr[key].length;
+       }
+    } return max;
+  }  console.log(a("hh ooo i"));
+
+  // task 3
+       
+function vCount( str){
+          var  count=0;
+          var arr=str.split("");
+         for(var key in arr ){
+             switch(arr[key]){
+                 case "a" :
+                 case "e" :
+                 case "i" :
+                 case "o" :
+                 case "u" :
+                 case "y" :
+                 count++; break;
+             
+             } 
+         } return count;
+}
+          console.log (vCount("kkkkkkk"));
+
+            </script>
+        </body>
+    </head>
+</html>
