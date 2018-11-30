@@ -3,6 +3,19 @@
         <body>
             <script>
 
+    // 1 task  arajin tarer@ darcnel metsatar            
+   function upp(str){
+        var str1=""
+        arr=str.split(" ");
+        for ( var key in arr){
+         var  fr= arr[key].charAt(0);
+         var bod= arr[key].slice(1);
+         fr=fr.toUpperCase(fr);
+             var  x=fr.concat(bod);
+             str1=str1.concat(" ",x)  }
+         return str1;
+    }  console.log(upp( "menq qich enq sakayn, mez hay en asum"));
+
 //   task 2   
   function a (str){
     var max =1; 
