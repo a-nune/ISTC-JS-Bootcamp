@@ -18,7 +18,7 @@
 
   // task 3
        
-function vCount( str){
+/*function vCount( str){
           var  count=0;
           var arr=str.split("");
          for(var key in arr ){
@@ -34,7 +34,32 @@ function vCount( str){
              } 
          } return count;
 }
-          console.log (vCount("kkkkkkk"));
+          console.log (vCount("kkkkkkk"));*/
+
+   /3 task  2-nd version
+function vCount( str){
+          var  count=0;
+        var  vowels={1:"a",
+                      2:"A",
+                      3:"e",
+                      4:"E",
+                      5:"o",
+                      6:"O",
+                      7:"u",
+                      8:"U",
+                      9:"y",
+                      10:"Y"
+                                 }
+         for (var i=0; i<=str.length; i++){
+             for ( var key in vowels ){
+                 if ( str.charAt(i) ===vowels[key]){
+                     count++;
+                 } else {
+                 continue}
+             }
+                      } return count;
+          }   console.log(vCount("EdgAoek"));
+     
 
             </script>
         </body>
