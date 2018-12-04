@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script> 
+
+
+// task 3 
+var arr=Object.entries(obj); 
+    //console.log(arr.length);
+   
+  /* function findeKey(objKey){
+
+    for (var arrKey in Object.keys(obj)){
+        if(Object.keys(obj)[arrKey] == objKey){
+             return "ok";
+        }else {continue; 
+         } 
+    } return "no"
+
+}console.log(findeKey("k"));*/
+
+
+
+//task 4
+   /*var goods={
+             quantity:5,
+              bookprice:90,
+              penprice:4
+
+               };
+   goods.bill=function(){
+      return  this.quantity*this.bookprice  + this.quantity*this.penprice
+    }; console.log(goods.bill());
+
+    goods.monthbill=function(){
+        return this.bill()*30;
+    } ;console.log(goods.monthbill());*/
+
+var goods={
+             quantity:5,
+              bookprice:90,
+              penprice:4,
+              bill:function(){
+                return  this.quantity*this.bookprice  + this.quantity*this.penprice  
+              }
+                  };
+    console.log(goods.bill());
+
+    goods.monthbill=function(){
+        return this.bill()*30;
+    } ;console.log(goods.monthbill());
+
+</script>    
+</body>
+</html>
